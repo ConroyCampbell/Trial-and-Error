@@ -9,7 +9,6 @@ onload=function(){
     for(let i=0;i<len;i++){
         getsquares[i].className+=('square');
         getsquares[i].addEventListener('click',function(){
-            // console.log('Clicked')
 
             getplayer()
             function getplayer(){
@@ -22,7 +21,6 @@ onload=function(){
                     document.getElementById('board').getElementsByTagName('div')[i].className+=(' X');
                 }
                 array.push(getsquares[i].innerHTML=currentplayer);
-                // console.log(array)
                 checkwinner();
 
 
@@ -82,17 +80,7 @@ onload=function(){
        });
     }  
     document.querySelector('button').addEventListener('click',function(){
-        // for(let i=0;i<len;i++){
-        //     stat.classList.remove('you-won');
-        //     stat.textContent="Move your mouse over a square and click to play an X or an O.";
-        //     getsquares[i].classList.remove('X');
-        //     getsquares[i].classList.remove('O');
-        //     getsquares[i].innerHTML='';
-        //     array.splice(0,array.length);
-        //     getsquares[i].className+=('square');
-        //     getsquares[i].addEventListener('click',function(){   
-        //     },{once:true});                        
-        // }
+        
         location.reload();
     })
 }
